@@ -1,0 +1,136 @@
+.header {
+  font-size: 1.4rem;
+  background-color: #fff;
+  border-bottom: 1px solid var(--color-grey-dark-2);
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__item {
+    height: 100%;
+    text-decoration: none;
+    padding-right: 2rem;
+    &:last-child {
+      padding-right: 4rem;
+    }
+  }
+  &__link {
+    padding-top: 2.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    height: 100%;
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--color-grey-dark-1);
+      display: inline-block;
+      transition: all 0.2s;
+      position: relative;
+      font-size: 1.4rem;
+      //change for the <button>
+      border: none;
+      cursor: pointer;
+      &:hover {
+        background-color: var(--color-grey-light-4);
+        cursor: pointer;
+        border-radius: none;
+        transform: translateY(-0.1rem);
+      }
+      &:focus,
+      &:active {
+        outline: none;
+        border: none;
+      }
+      &:active {
+        transform: translateY(0.1rem);
+      }
+    }
+  }
+}
+
+.logo {
+  height: 3rem;
+  width: 3rem;
+  margin-left: 2rem;
+  &__oglas {
+    height: 1rem;
+    width: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+.search {
+  margin-left: 2rem;
+  position: relative;
+  flex: 0 0 55%;
+  &__input {
+    padding: 1rem 1.4rem;
+    width: 95%;
+    border: 1px solid var(--color-grey-light-4);
+    border-radius: 1000px;
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+
+  &__button {
+    top: 0.9rem;
+    position: absolute;
+    margin-left: -5rem;
+    background-color: white;
+    border: none;
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-0.1rem);
+    }
+    &:focus,
+    &:active {
+      outline: none;
+      border: none;
+    }
+    &:active {
+      transform: translateY(0.1rem);
+    }
+  }
+  &__logo {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--color-grey-dark-2);
+  }
+}
+.oglas {
+  padding: 1rem 2rem;
+  &__button {
+    color: white;
+    background-color: var(--color-primary);
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 1000px;
+
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-0.1rem);
+      box-shadow: var(--shadow-dark);
+    }
+    &:focus,
+    &:active {
+      outline: none;
+      border: none;
+    }
+    &:active {
+      transform: translateY(0.1rem);
+      box-shadow: var(--shadow-light);
+    }
+  }
+}

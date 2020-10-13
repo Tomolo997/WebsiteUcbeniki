@@ -1,0 +1,20 @@
+.container-main {
+  max-width: 80vw;
+  margin: 8rem auto;
+  background-color: white;
+  box-shadow: var(--shadow-dark);
+  height: auto;
+
+  display: grid;
+
+  grid-row-gap: 2rem;
+
+  grid-column-gap: 3rem;
+  grid-template-columns:
+    [col-left-side-start] 3rem [col-left-side-end] repeat(
+      auto-fit,
+      [col-center-start] minmax(20rem, 1fr) [col-center-end]
+    )
+    [col-right-side-start] 3rem [col-right-side-end ];
+  grid-template-rows: 7rem repeat(4, 1fr) 7rem;
+}
